@@ -36,7 +36,6 @@ function SearchMovies() {
                         <MovieCard movie={movie} key={movie.id} />
                     ))}
                 </div>
-
             </div>
         </>
     );
