@@ -68,7 +68,7 @@ small {
 
 .label {
   font-size: 1.2rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
@@ -93,7 +93,8 @@ small {
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.335);
+  border: 1px solid rgba(0, 0, 0, 0.335);
 }
 
 @media (min-width:786px) {
@@ -106,4 +107,31 @@ small {
   .input {
     margin-bottom: 0;
   }
+
+  .label {
+    margin-bottom: 0rem;
+  }
+}
+
+.card-list {
+  margin-top: 4rem;
+}
+
+.card {
+  padding: 2rem 4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.856)
+}
+
+.card--title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.card--image {
+  margin: 0 auto;
+  display: block
 }
