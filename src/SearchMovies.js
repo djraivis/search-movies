@@ -25,19 +25,18 @@ function SearchMovies() {
                 <form className="form" onSubmit={SearchMovies}>
                     <label className="label" htmlFor="query">Movie Name</label>
                     <input className="input" type="text" name="query"
-                        placeholder="i.e. Jurassic Park"
+                        placeholder="i.e. Seven Samurai(1954)"
                         value={query} onChange={(e) => setQuery(e.target.value)}
                     />
                     <button className="button" type="submit">Search</button>
                 </form>
 
                 <div className="card-list">
-                    {movies.filter(movie => movie.poster_path).map
-                        (movie => (
-                            <MovieCard movie={movie} key={movie.id} />
-                        ))
-                    }
+                    {movies.filter(movie => movie.poster_path).map(movie => (
+                        <MovieCard movie={movie} key={movie.id} />
+                    ))}
                 </div>
+
             </div>
         </>
     );

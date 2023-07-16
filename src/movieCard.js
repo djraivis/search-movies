@@ -1,3 +1,4 @@
+import React from 'react';
 import './movieCard';
 import './App.css';
 
